@@ -5,9 +5,13 @@
     "node": ">=18.12.0 <21"
   },
   "version": "0.0.1",
+  "workspaces": [
+    "packages/*"
+  ],
   "description": "Eslint & prettier configs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "all:lint": "yarn workspaces foreach --all run lint",
+    "all:lint-fix": "yarn workspaces foreach --all run lint-fix"
   },
   "repository": {
     "type": "git",
@@ -24,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/andre-brdoch/validations/issues"
   },
-  "homepage": "https://github.com/andre-brdoch/validations#readme"
+  "homepage": "https://github.com/andre-brdoch/validations#readme",
+  "devDependencies": {
+    "eslint": "8.57.1"
+  }
 }
