@@ -1,0 +1,14 @@
+{
+  "name": "eslint-config",
+  "packageManager": "yarn@4.5.0",
+  "scripts": {
+    "lint": "eslint . --ext .js,.cjs,.mjs",
+    "lint-fix": "yarn lint --fix"
+  },
+  "devDependencies": {
+    "eslint": "8.57.1"
+  },
+  "peerDependencies": {
+    "eslint": "^8.56.0"
+  }
+}
