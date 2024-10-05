@@ -1,5 +1,9 @@
 {
   "name": "validations",
+  "packageManager": "yarn@4.5.0",
+  "engines": {
+    "node": ">=18.12.0 <21"
+  },
   "version": "0.0.1",
   "description": "Eslint & prettier configs",
   "scripts": {
