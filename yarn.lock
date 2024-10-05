@@ -5,6 +5,16 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
+"@andre-brdoch/eslint-config@workspace:packages/eslint-config":
+  version: 0.0.0-use.local
+  resolution: "@andre-brdoch/eslint-config@workspace:packages/eslint-config"
+  dependencies:
+    eslint: "npm:8.57.1"
+  peerDependencies:
+    eslint: ^8.56.0
+  languageName: unknown
+  linkType: soft
+
 "@eslint-community/eslint-utils@npm:^4.2.0":
   version: 4.4.0
   resolution: "@eslint-community/eslint-utils@npm:4.4.0"
@@ -261,16 +271,6 @@ __metadata:
   checksum: 10c0/9497d4dd307d845bd7f75180d8188bb17ea8c151c1edbf6b6717c100e104d629dc2dfb687686181b0f4b7d732c7dfdc4d5e7a8ff72de1b0ca283a75bbb3a9cd9
   languageName: node
   linkType: hard
-
-"eslint-config@workspace:packages/eslint-config":
-  version: 0.0.0-use.local
-  resolution: "eslint-config@workspace:packages/eslint-config"
-  dependencies:
-    eslint: "npm:8.57.1"
-  peerDependencies:
-    eslint: ^8.56.0
-  languageName: unknown
-  linkType: soft
 
 "eslint-scope@npm:^7.2.2":
   version: 7.2.2
