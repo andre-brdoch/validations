@@ -15,14 +15,14 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:."\
     },\
     {\
-      "name": "eslint-config",\
+      "name": "@andre-brdoch/eslint-config",\
       "reference": "workspace:packages/eslint-config"\
     }\
   ],\
   "enableTopLevelFallback": true,\
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
   "fallbackExclusionList": [\
-    ["eslint-config", ["workspace:packages/eslint-config"]],\
+    ["@andre-brdoch/eslint-config", ["workspace:packages/eslint-config"]],\
     ["validations", ["workspace:."]]\
   ],\
   "fallbackPool": [\
@@ -32,6 +32,16 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["eslint", "npm:8.57.1"]\
+        ],\
+        "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["@andre-brdoch/eslint-config", [\
+      ["workspace:packages/eslint-config", {\
+        "packageLocation": "./packages/eslint-config/",\
+        "packageDependencies": [\
+          ["@andre-brdoch/eslint-config", "workspace:packages/eslint-config"],\
           ["eslint", "npm:8.57.1"]\
         ],\
         "linkType": "SOFT"\
@@ -414,16 +424,6 @@ const RAW_RUNTIME_STATE =
           ["text-table", "npm:0.2.0"]\
         ],\
         "linkType": "HARD"\
-      }]\
-    ]],\
-    ["eslint-config", [\
-      ["workspace:packages/eslint-config", {\
-        "packageLocation": "./packages/eslint-config/",\
-        "packageDependencies": [\
-          ["eslint-config", "workspace:packages/eslint-config"],\
-          ["eslint", "npm:8.57.1"]\
-        ],\
-        "linkType": "SOFT"\
       }]\
     ]],\
     ["eslint-scope", [\

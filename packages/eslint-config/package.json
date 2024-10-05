@@ -1,6 +1,8 @@
 {
-  "name": "eslint-config",
+  "name": "@andre-brdoch/eslint-config",
+  "version": "1.0.0",
   "packageManager": "yarn@4.5.0",
+  "main": "./src/index.js",
   "scripts": {
     "lint": "eslint . --ext .js,.cjs,.mjs",
     "lint-fix": "yarn lint --fix"
