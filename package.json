@@ -11,7 +11,8 @@
   "description": "Eslint & prettier configs",
   "scripts": {
     "all:lint": "yarn workspaces foreach --all run lint",
-    "all:lint-fix": "yarn workspaces foreach --all run lint-fix"
+    "all:lint-fix": "yarn workspaces foreach --all run lint-fix",
+    "all:publish": "yarn workspaces foreach --all run publish"
   },
   "repository": {
     "type": "git",
