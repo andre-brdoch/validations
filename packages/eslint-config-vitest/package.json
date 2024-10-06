@@ -1,0 +1,19 @@
+{
+  "name": "@andre-brdoch/eslint-config-vitest",
+  "version": "0.0.2",
+  "packageManager": "yarn@4.5.0",
+  "main": "./src/index.js",
+  "scripts": {
+    "lint": "yarn helper:ws-lint packages/eslint-config-vitest",
+    "lint-fix": "yarn helper:ws-lint-fix packages/eslint-config-vitest",
+    "style": "yarn helper:ws-style packages/eslint-config-vitest",
+    "style-fix": "yarn helper:ws-style-fix packages/eslint-config-vitest",
+    "publish": "npm publish --access public"
+  },
+  "dependencies": {
+    "eslint-plugin-vitest": "^0.5.4"
+  },
+  "peerDependencies": {
+    "eslint": "^8.56.0"
+  }
+}
