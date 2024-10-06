@@ -1,0 +1,1 @@
+{ "*.{js,cjs,mjs}": ["yarn helper:ws-style", "yarn helper:ws-lint"] }
