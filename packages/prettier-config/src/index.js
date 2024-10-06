@@ -5,6 +5,7 @@ module.exports = {
   htmlWhitespaceSensitivity: 'ignore',
   printWidth: 100,
   proseWrap: 'never',
+  quoteProps: 'consistent',
   semi: false,
   singleAttributePerLine: true,
   singleQuote: true,
