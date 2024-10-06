@@ -2,6 +2,10 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
+  "files.exclude": {
+    ".git/": true,
+    "node_modules/": true
+},
   "search.exclude": {
     "**/.yarn": true,
     "**/.pnp.*": true

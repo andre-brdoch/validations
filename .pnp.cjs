@@ -17,12 +17,17 @@ const RAW_RUNTIME_STATE =
     {\
       "name": "@andre-brdoch/eslint-config",\
       "reference": "workspace:packages/eslint-config"\
+    },\
+    {\
+      "name": "@andre-brdoch/prettier-config",\
+      "reference": "workspace:packages/prettier-config"\
     }\
   ],\
   "enableTopLevelFallback": true,\
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
   "fallbackExclusionList": [\
-    ["@andre-brdoch/eslint-config", ["workspace:packages/eslint-config"]],\
+    ["@andre-brdoch/eslint-config", ["virtual:32deab361c495f3bf2102197af14924e8693c1b09ac06d335b4dc1f0f839a9a37fa7376805955cb5d81e0696891d31a0730191b1a0d0115d74a891f901375c9f#workspace:packages/eslint-config", "workspace:packages/eslint-config"]],\
+    ["@andre-brdoch/prettier-config", ["workspace:packages/prettier-config"]],\
     ["validations", ["workspace:."]]\
   ],\
   "fallbackPool": [\
@@ -32,17 +37,43 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["eslint", "npm:8.57.1"]\
+          ["eslint", "npm:8.57.1"],\
+          ["prettier", "npm:3.3.3"]\
         ],\
         "linkType": "SOFT"\
       }]\
     ]],\
     ["@andre-brdoch/eslint-config", [\
+      ["virtual:32deab361c495f3bf2102197af14924e8693c1b09ac06d335b4dc1f0f839a9a37fa7376805955cb5d81e0696891d31a0730191b1a0d0115d74a891f901375c9f#workspace:packages/eslint-config", {\
+        "packageLocation": "./.yarn/__virtual__/@andre-brdoch-eslint-config-virtual-d9a1f2db0d/1/packages/eslint-config/",\
+        "packageDependencies": [\
+          ["@andre-brdoch/eslint-config", "virtual:32deab361c495f3bf2102197af14924e8693c1b09ac06d335b4dc1f0f839a9a37fa7376805955cb5d81e0696891d31a0730191b1a0d0115d74a891f901375c9f#workspace:packages/eslint-config"],\
+          ["@types/eslint", null],\
+          ["eslint", "npm:8.57.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/eslint",\
+          "eslint"\
+        ],\
+        "linkType": "SOFT"\
+      }],\
       ["workspace:packages/eslint-config", {\
         "packageLocation": "./packages/eslint-config/",\
         "packageDependencies": [\
           ["@andre-brdoch/eslint-config", "workspace:packages/eslint-config"],\
           ["eslint", "npm:8.57.1"]\
+        ],\
+        "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["@andre-brdoch/prettier-config", [\
+      ["workspace:packages/prettier-config", {\
+        "packageLocation": "./packages/prettier-config/",\
+        "packageDependencies": [\
+          ["@andre-brdoch/prettier-config", "workspace:packages/prettier-config"],\
+          ["@andre-brdoch/eslint-config", "virtual:32deab361c495f3bf2102197af14924e8693c1b09ac06d335b4dc1f0f839a9a37fa7376805955cb5d81e0696891d31a0730191b1a0d0115d74a891f901375c9f#workspace:packages/eslint-config"],\
+          ["eslint", "npm:8.57.1"],\
+          ["prettier", "npm:3.3.3"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -919,6 +950,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["prettier", [\
+      ["npm:3.3.3", {\
+        "packageLocation": "./.yarn/unplugged/prettier-npm-3.3.3-e811f023f3/node_modules/prettier/",\
+        "packageDependencies": [\
+          ["prettier", "npm:3.3.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["punycode", [\
       ["npm:2.3.1", {\
         "packageLocation": "./.yarn/cache/punycode-npm-2.3.1-97543c420d-14f76a8206.zip/node_modules/punycode/",\
@@ -1066,7 +1106,8 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["validations", "workspace:."],\
-          ["eslint", "npm:8.57.1"]\
+          ["eslint", "npm:8.57.1"],\
+          ["prettier", "npm:3.3.3"]\
         ],\
         "linkType": "SOFT"\
       }]\

@@ -12,7 +12,11 @@
   "scripts": {
     "all:lint": "yarn workspaces foreach --all run lint",
     "all:lint-fix": "yarn workspaces foreach --all run lint-fix",
-    "all:publish": "yarn workspaces foreach --all run publish"
+    "all:style": "yarn helper:ws-style .",
+    "all:style-fix": "yarn helper:ws-style-fix .",
+    "all:publish": "yarn workspaces foreach --all run publish",
+    "helper:ws-style": "prettier --check",
+    "helper:ws-style-fix": "prettier --write"
   },
   "repository": {
     "type": "git",
@@ -31,6 +35,7 @@
   },
   "homepage": "https://github.com/andre-brdoch/validations#readme",
   "devDependencies": {
-    "eslint": "8.57.1"
+    "eslint": "8.57.1",
+    "prettier": "3.3.3"
   }
 }
