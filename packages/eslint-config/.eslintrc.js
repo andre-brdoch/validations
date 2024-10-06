@@ -1,4 +1,4 @@
-const config = require('./src');
+const config = require('./src')
 
 module.exports = {
   ...config,
@@ -6,4 +6,4 @@ module.exports = {
     node: true,
     es2022: true,
   },
-};
+}

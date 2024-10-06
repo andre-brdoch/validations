@@ -18,7 +18,7 @@ yarn add -D @andre-brdoch/eslint-config eslint@^8.56.0
 // .eslintrc.js
 module.exports = {
   extends: ['@andre-brdoch/eslint-config'],
-};
+}
 ```
 
 Done! 🤘

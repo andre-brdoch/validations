@@ -53,4 +53,4 @@ module.exports = {
     'require-await': 'error',
     'yoda': 'error',
   },
-};
+}
