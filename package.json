@@ -10,6 +10,7 @@
   ],
   "description": "Eslint & prettier configs",
   "scripts": {
+    "all:validate": "yarn all:lint && yarn all:style",
     "all:lint": "yarn helper:ws-lint .",
     "all:lint-fix": "helper:ws-lint-fix .",
     "all:style": "yarn helper:ws-style .",
@@ -18,7 +19,8 @@
     "helper:ws-lint": "eslint --ext .js,.cjs,.mjs",
     "helper:ws-lint-fix": "yarn helper:ws-lint --fix",
     "helper:ws-style": "prettier --check",
-    "helper:ws-style-fix": "prettier --write"
+    "helper:ws-style-fix": "prettier --write",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -38,6 +40,7 @@
   "homepage": "https://github.com/andre-brdoch/validations#readme",
   "devDependencies": {
     "eslint": "8.57.1",
+    "husky": "9.1.6",
     "prettier": "3.3.3"
   }
 }

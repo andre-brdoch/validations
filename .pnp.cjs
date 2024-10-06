@@ -38,6 +38,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["eslint", "npm:8.57.1"],\
+          ["husky", "npm:9.1.6"],\
           ["prettier", "npm:3.3.3"]\
         ],\
         "linkType": "SOFT"\
@@ -651,6 +652,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["husky", [\
+      ["npm:9.1.6", {\
+        "packageLocation": "./.yarn/cache/husky-npm-9.1.6-f05821288d-705673db4a.zip/node_modules/husky/",\
+        "packageDependencies": [\
+          ["husky", "npm:9.1.6"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["ignore", [\
       ["npm:5.3.2", {\
         "packageLocation": "./.yarn/cache/ignore-npm-5.3.2-346d3ba017-f9f652c957.zip/node_modules/ignore/",\
@@ -1090,6 +1100,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["validations", "workspace:."],\
           ["eslint", "npm:8.57.1"],\
+          ["husky", "npm:9.1.6"],\
           ["prettier", "npm:3.3.3"]\
         ],\
         "linkType": "SOFT"\
