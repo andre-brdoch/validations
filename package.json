@@ -20,7 +20,8 @@
     "helper:ws-lint-fix": "yarn helper:ws-lint --fix",
     "helper:ws-style": "prettier --check",
     "helper:ws-style-fix": "prettier --write",
-    "prepare": "husky"
+    "prepare": "husky",
+    "lint-staged": "lint-staged"
   },
   "repository": {
     "type": "git",
@@ -41,6 +42,7 @@
   "devDependencies": {
     "eslint": "8.57.1",
     "husky": "9.1.6",
+    "lint-staged": "^15.2.10",
     "prettier": "3.3.3"
   }
 }
