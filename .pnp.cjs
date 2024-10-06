@@ -26,7 +26,7 @@ const RAW_RUNTIME_STATE =
   "enableTopLevelFallback": true,\
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
   "fallbackExclusionList": [\
-    ["@andre-brdoch/eslint-config", ["virtual:32deab361c495f3bf2102197af14924e8693c1b09ac06d335b4dc1f0f839a9a37fa7376805955cb5d81e0696891d31a0730191b1a0d0115d74a891f901375c9f#workspace:packages/eslint-config", "workspace:packages/eslint-config"]],\
+    ["@andre-brdoch/eslint-config", ["workspace:packages/eslint-config"]],\
     ["@andre-brdoch/prettier-config", ["workspace:packages/prettier-config"]],\
     ["validations", ["workspace:."]]\
   ],\
@@ -44,24 +44,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@andre-brdoch/eslint-config", [\
-      ["virtual:32deab361c495f3bf2102197af14924e8693c1b09ac06d335b4dc1f0f839a9a37fa7376805955cb5d81e0696891d31a0730191b1a0d0115d74a891f901375c9f#workspace:packages/eslint-config", {\
-        "packageLocation": "./.yarn/__virtual__/@andre-brdoch-eslint-config-virtual-d9a1f2db0d/1/packages/eslint-config/",\
-        "packageDependencies": [\
-          ["@andre-brdoch/eslint-config", "virtual:32deab361c495f3bf2102197af14924e8693c1b09ac06d335b4dc1f0f839a9a37fa7376805955cb5d81e0696891d31a0730191b1a0d0115d74a891f901375c9f#workspace:packages/eslint-config"],\
-          ["@types/eslint", null],\
-          ["eslint", "npm:8.57.1"]\
-        ],\
-        "packagePeers": [\
-          "@types/eslint",\
-          "eslint"\
-        ],\
-        "linkType": "SOFT"\
-      }],\
       ["workspace:packages/eslint-config", {\
         "packageLocation": "./packages/eslint-config/",\
         "packageDependencies": [\
-          ["@andre-brdoch/eslint-config", "workspace:packages/eslint-config"],\
-          ["eslint", "npm:8.57.1"]\
+          ["@andre-brdoch/eslint-config", "workspace:packages/eslint-config"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -70,10 +56,7 @@ const RAW_RUNTIME_STATE =
       ["workspace:packages/prettier-config", {\
         "packageLocation": "./packages/prettier-config/",\
         "packageDependencies": [\
-          ["@andre-brdoch/prettier-config", "workspace:packages/prettier-config"],\
-          ["@andre-brdoch/eslint-config", "virtual:32deab361c495f3bf2102197af14924e8693c1b09ac06d335b4dc1f0f839a9a37fa7376805955cb5d81e0696891d31a0730191b1a0d0115d74a891f901375c9f#workspace:packages/eslint-config"],\
-          ["eslint", "npm:8.57.1"],\
-          ["prettier", "npm:3.3.3"]\
+          ["@andre-brdoch/prettier-config", "workspace:packages/prettier-config"]\
         ],\
         "linkType": "SOFT"\
       }]\

@@ -5,11 +5,9 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@andre-brdoch/eslint-config@workspace:^, @andre-brdoch/eslint-config@workspace:packages/eslint-config":
+"@andre-brdoch/eslint-config@workspace:packages/eslint-config":
   version: 0.0.0-use.local
   resolution: "@andre-brdoch/eslint-config@workspace:packages/eslint-config"
-  dependencies:
-    eslint: "npm:8.57.1"
   peerDependencies:
     eslint: ^8.56.0
   languageName: unknown
@@ -18,10 +16,6 @@ __metadata:
 "@andre-brdoch/prettier-config@workspace:packages/prettier-config":
   version: 0.0.0-use.local
   resolution: "@andre-brdoch/prettier-config@workspace:packages/prettier-config"
-  dependencies:
-    "@andre-brdoch/eslint-config": "workspace:^"
-    eslint: "npm:8.57.1"
-    prettier: "npm:3.3.3"
   peerDependencies:
     prettier: ^3.0.0
   languageName: unknown

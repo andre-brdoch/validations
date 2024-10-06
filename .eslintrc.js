@@ -1,5 +1,7 @@
+const config = require('./packages/eslint-config/src')
+
 module.exports = {
-  extends: ['@andre-brdoch/eslint-config'],
+  ...config,
   env: {
     node: true,
     es2022: true,

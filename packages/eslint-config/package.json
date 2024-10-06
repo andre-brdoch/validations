@@ -4,12 +4,11 @@
   "packageManager": "yarn@4.5.0",
   "main": "./src/index.js",
   "scripts": {
-    "lint": "eslint . --ext .js,.cjs,.mjs",
-    "lint-fix": "yarn lint --fix",
+    "lint": "yarn helper:ws-lint packages/eslint-config",
+    "lint-fix": "yarn helper:ws-lint-fix packages/eslint-config",
+    "style": "yarn helper:ws-style packages/eslint-config",
+    "style-fix": "yarn helper:ws-style-fix packages/eslint-config",
     "publish": "npm publish --access public"
-  },
-  "devDependencies": {
-    "eslint": "8.57.1"
   },
   "peerDependencies": {
     "eslint": "^8.56.0"
