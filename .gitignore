@@ -6,3 +6,5 @@
 !.yarn/versions
 # to enable zero-installs
 !.yarn/cache
+
+node_modules
