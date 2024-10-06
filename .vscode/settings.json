@@ -1,14 +1,22 @@
 {
+  // Formatting
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "prettier.prettierPath": ".yarn/sdks/prettier/index.cjs",
+
+  // Linting
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
+  "eslint.nodePath": ".yarn/sdks",
+
+  // Other
   "files.exclude": {
     ".git/": true,
     "node_modules/": true
-},
+  },
   "search.exclude": {
     "**/.yarn": true,
     "**/.pnp.*": true
-  },
-  "eslint.nodePath": ".yarn/sdks"
+  }
 }
