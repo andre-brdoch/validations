@@ -10,7 +10,7 @@
   ],
   "description": "Eslint & prettier configs",
   "scripts": {
-    "all:validate": "yarn all:lint && yarn all:style",
+    "all:validate": "concurrently \"yarn all:lint\" \"yarn all:style\"",
     "all:lint": "yarn helper:ws-lint .",
     "all:lint-fix": "helper:ws-lint-fix .",
     "all:style": "yarn helper:ws-style .",
@@ -40,6 +40,7 @@
   },
   "homepage": "https://github.com/andre-brdoch/validations#readme",
   "devDependencies": {
+    "concurrently": "^9.0.1",
     "eslint": "8.57.1",
     "husky": "9.1.6",
     "lint-staged": "^15.2.10",
