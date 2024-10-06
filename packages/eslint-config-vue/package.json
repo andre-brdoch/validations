@@ -1,0 +1,16 @@
+{
+  "name": "@andre-brdoch/eslint-config-vue",
+  "version": "0.0.1",
+  "packageManager": "yarn@4.5.0",
+  "main": "./src/index.js",
+  "scripts": {
+    "lint": "yarn helper:ws-lint packages/eslint-config-vue",
+    "lint-fix": "yarn helper:ws-lint-fix packages/eslint-config-vue",
+    "style": "yarn helper:ws-style packages/eslint-config-vue",
+    "style-fix": "yarn helper:ws-style-fix packages/eslint-config-vue",
+    "publish": "npm publish --access public"
+  },
+  "peerDependencies": {
+    "eslint": "^8.56.0"
+  }
+}
