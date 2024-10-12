@@ -9,7 +9,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@andre-brdoch/eslint-config-vitest@workspace:packages/eslint-config-vitest"
   dependencies:
-    eslint-plugin-vitest: "npm:^0.5.4"
+    eslint-plugin-vitest: "npm:0.5.4"
   peerDependencies:
     eslint: ^8.56.0
   languageName: unknown
@@ -502,7 +502,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-vitest@npm:^0.5.4":
+"eslint-plugin-vitest@npm:0.5.4":
   version: 0.5.4
   resolution: "eslint-plugin-vitest@npm:0.5.4"
   dependencies:
