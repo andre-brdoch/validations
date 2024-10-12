@@ -1,4 +1,5 @@
 module.exports = {
+  extends: ['plugin:vue/vue3-recommended'],
   rules: {
     'vue/array-bracket-spacing': 'error',
     'vue/arrow-spacing': 'error',

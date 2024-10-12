@@ -10,6 +10,9 @@
     "style-fix": "yarn helper:ws-style-fix packages/eslint-config-vue",
     "publish": "npm publish --access public"
   },
+  "dependencies": {
+    "eslint-plugin-vue": "9.29.0"
+  },
   "peerDependencies": {
     "eslint": "^8.56.0"
   }
